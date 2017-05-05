@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	"github.com/vsouza/Democratic/handlers"
 )
 
 func main() {
@@ -13,8 +14,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	// Routes
-	e.GET("/", handlers.hello)
-	e.GET("/:id", handlers.getUserByID)
+	e.GET("/graphql", handlers.Query)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":1323"))
