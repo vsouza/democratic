@@ -1,12 +1,13 @@
 # democratic
-> Golang skeleton for GraphQL API
+> Golang skeleton for GraphQL API with Echo framework
 
 [![Go Version][go-version-image]][go-version-url]
 [![Build Status][travis-image]][travis-url]
 [![License][license-image]][license-url]
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-It's a small API project. Supports GraphQL queries and GraphQL Mutations. Feel free to contribute!
+It's a small API project based on [Echo framework](https://echo.labstack.com), and GraphQL. 
+Supports GraphQL queries and GraphQL Mutations. Feel free to contribute!
 
 ![](header.png)
 
