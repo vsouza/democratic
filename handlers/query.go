@@ -5,7 +5,7 @@ import (
 
 	"github.com/graphql-go/graphql"
 	"github.com/labstack/echo"
-	"github.com/vsouza/Democratic/schemas"
+	"github.com/vsouza/democratic/schemas"
 )
 
 func Query(c echo.Context) error {

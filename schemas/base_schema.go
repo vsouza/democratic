@@ -2,7 +2,7 @@ package schemas
 
 import (
 	"github.com/graphql-go/graphql"
-	"github.com/vsouza/Democratic/resolvers"
+	"github.com/vsouza/democratic/resolvers"
 )
 
 var queryType = graphql.NewObject(

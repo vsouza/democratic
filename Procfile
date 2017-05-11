@@ -1,0 +1,1 @@
+web: go run cmd/democratic/main.go

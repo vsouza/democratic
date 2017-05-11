@@ -3,10 +3,18 @@ package main
 import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	"github.com/vsouza/Democratic/handlers"
+	"github.com/vsouza/democratic/config"
+	"github.com/vsouza/democratic/handlers"
+	kingpin "gopkg.in/alecthomas/kingpin.v2"
+)
+
+var (
+	enviroment = kingpin.Flag("environment", "Application environment").Default("dev").String()
 )
 
 func main() {
+	kingpin.Parse()
+	config.Init(*enviroment)
 	e := echo.New()
 
 	// Middleware
@@ -17,5 +25,6 @@ func main() {
 	e.GET("/graphql", handlers.Query)
 
 	// Start server
-	e.Logger.Fatal(e.Start(":1323"))
+	c := config.GetConfig()
+	e.Logger.Fatal(e.Start(c.GetString("server.port")))
 }

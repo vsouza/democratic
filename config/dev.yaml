@@ -1,0 +1,3 @@
+appName: democratic
+server:
+  port: :8888
