@@ -6,7 +6,7 @@
 [![License][license-image]][license-url]
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-One to two paragraph statement about your product and what it does.
+It's a small API project. Supports GraphQL queries and GraphQL Mutations. Feel free to contribute!
 
 ![](header.png)
 
@@ -51,7 +51,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [https://github.com/vsouza/democratic](https://github.com/vsouza/democratic)
 
-[go-version-image]:https://img.shields.io/badge/Go-1.7-blue.svg
+[go-version-image]:https://img.shields.io/badge/Go%20version-1.7-blue.svg
 [go-version-url]: https://golang.org/
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
