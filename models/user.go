@@ -11,7 +11,7 @@ type User struct {
 	Status    int          `json:"status"`
 	BirthDate time.Time    `json:"birthDate"`
 	CreatedAt time.Time    `json:"createdAt"`
-	UpdatedAt time.Time    `json:"createdAt"`
+	UpdatedAt time.Time    `json:"UpdatedAt"`
 	Address   *UserAddress `json:"address"`
 }
 
