@@ -46,7 +46,7 @@ const (
 )
 
 func GetUserByID(id string) *User {
-
+	time := time.Now()
 	return &User{
 		ID:        "30a0e28b-bff8-4393-8a8e-26a7333658ff",
 		Email:     "example@example.com",
@@ -54,9 +54,9 @@ func GetUserByID(id string) *User {
 		FullName:  "John Doe",
 		Gender:    Male,
 		Status:    UserStatusBlocked,
-		BirthDate: time.Now(),
-		CreatedAt: time.Now(),
-		UpdatedAt: time.Now(),
+		BirthDate: time,
+		CreatedAt: time,
+		UpdatedAt: time,
 		Address: &UserAddress{
 			Neighborhood:   "Silicon",
 			ZipCode:        "01010101",
