@@ -56,7 +56,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [go-version-url]: https://golang.org/
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[codebeat-image]: https://codebeat.co/badges/c19b47ea-2f9d-45df-8458-b2d952fe9dad
-[codebeat-url]: https://codebeat.co/projects/github-com-vsouza-democratic
+[travis-image]: https://img.shields.io/travis/vsouza/democratic/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/vsouza/democratic
+[codebeat-image]: https://codebeat.co/badges/68b4c895-96c6-4547-a34f-2f7f9283415c
+[codebeat-url]: https://codebeat.co/projects/github-com-vsouza-democratic-master
