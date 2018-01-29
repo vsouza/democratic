@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/vsouza/democratic/config"
 	"github.com/vsouza/democratic/handlers"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
@@ -23,7 +24,7 @@ func main() {
 
 	// Routes
 	e.GET("/graphql", handlers.Query)
-
+	e.GET("/metrics", echo.WrapHandler(promhttp.Handler()))
 	// Start server
 	c := config.GetConfig()
 	e.Logger.Fatal(e.Start(c.GetString("server.port")))
