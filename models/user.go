@@ -34,12 +34,6 @@ const (
 )
 
 const (
-	AddreesTypeHome = iota
-	AddressTypeWork
-	AddressTypeOther
-)
-
-const (
 	UserStatusActive = iota
 	UserStatusBlocked
 	UserStatusDeactive
@@ -62,7 +56,6 @@ func GetUserByID(id string) *User {
 			ZipCode:        "01010101",
 			AddressLineOne: "Mapple Street",
 			AddressLineTwo: "Head quarter",
-			AddressType:    AddreesTypeHome,
 			Number:         300,
 			City:           "Vienza",
 			State:          "California",
