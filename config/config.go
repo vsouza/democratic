@@ -1,9 +1,9 @@
 package config
 
 import (
-	"log"
-
+	"fmt"
 	"github.com/spf13/viper"
+	"log"
 )
 
 var config *viper.Viper
@@ -14,7 +14,8 @@ func Init(env string) {
 	v := viper.New()
 	v.SetConfigType("yaml")
 	v.SetConfigName(env)
-	v.AddConfigPath(".")
+	v.AddConfigPath("../../")
+	fmt.Println(v)
 	if err := v.ReadInConfig(); err != nil {
 		log.Fatal("error on parsing configuration file")
 	}
