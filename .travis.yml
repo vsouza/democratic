@@ -3,12 +3,10 @@ go:
  - 1.8
  - 1.9
 
-before_install:
+before_script:
   # Install Glide
   - mkdir -p "${GOPATH}/bin"
   - curl https://glide.sh/get | bash
-
-install:
   - glide install
 
 script:
