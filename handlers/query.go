@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"errors"
+	"fmt"
 
 	"github.com/graphql-go/graphql"
 	"github.com/labstack/echo"

@@ -7,7 +7,7 @@
 [![License][license-image]][license-url]
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-It's a small API project based on [Echo framework](https://echo.labstack.com), and GraphQL. 
+It's a small API project based on [Echo framework](https://echo.labstack.com), and GraphQL.
 Supports GraphQL queries and GraphQL Mutations. Feel free to contribute!
 
 ![](header.png)
@@ -18,22 +18,21 @@ Supports GraphQL queries and GraphQL Mutations. Feel free to contribute!
 - [x] Resolvers
 - [x] Schemas
 - [x] Flag parser
-- [ ] Custom Log middleware
 - [ ] Auth middleware
-- [ ] Metrics middleware
+- [x] Metrics with Prometheus
 
 ## Requirements
 
 - Govendor
-- Golang 1.7
+- Golang 1.9
 
 ## Installation
 
 #### From source
-You can use [Clone from Github](http://github.com/vsouza/democratic) and run `make run` 
+You can use [Clone from Github](http://github.com/vsouza/democratic) and run `make run`
 
 
-To set the correct environment you should use: `-e` flag (dev is default) 
+To set the correct environment you should use: `-e` flag (dev is default)
 
 ## Usage example
 
