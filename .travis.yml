@@ -3,11 +3,13 @@ go:
  - 1.8
  - 1.9
 
-before_script:
-  # Install Glide
-  - mkdir -p "${GOPATH}/bin"
-  - curl https://glide.sh/get | bash
-  - glide install
+before_install:
+  # Setup dependency management tool
+  - curl -L -s https://github.com/golang/dep/releases/download/v0.3.1/dep-linux-amd64 -o $GOPATH/bin/dep
+  - chmod +x $GOPATH/bin/dep
+
+install:
+  - dep ensure
 
 script:
  - go test -v ./...
