@@ -28,4 +28,5 @@ func TestQueryUser(t *testing.T) {
 		assert.Equal(t, http.StatusOK, rec.Code)
 		assert.Equal(t, resultGraphQL, rec.Body.String())
 	}
+
 }
